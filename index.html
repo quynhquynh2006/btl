@@ -15,7 +15,7 @@
             </div>
             <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
             <ul class="menu">
-                <li><a href="trangchu.html">Trang chủ</a></li>
+                <li><a href="index.html">Trang chủ</a></li>
                 <li><a href="vechungtoi.html">Về chúng tôi</a></li>
                 <li><a href="bosuutap.html">Bộ sưu tập</a></li>
                 <li><a href="tours.html">Tour</a></li>
@@ -24,31 +24,7 @@
         </nav>
 
         <div class="video-container">
-            <video src="video/370ce85b-d270-4616-9fc2-9481a3cc3381.mp4.mp4" autoplay muted loop></video>
-            <div class="header-content">
-                <h1>Khám phá</h1>
-                <p>Xách ba lô lên và đi thôi nào</p>
-                <form class="booking-form">
-                    <h1>Bạn muốn đi đâu nhỉ</h1>
-                    <p><label for="location">Địa điểm</label></p>
-                    <select id="location">
-                        <option value="">--Chọn địa điểm--</option>
-                        <option value="dao-cat-ba">Đảo Cát Bà</option>
-                        <option value="vinh-ha-long">Vịnh Hạ Long</option>
-                        <option value="ly-son">Lý Sơn</option>
-                        <option value="phu-quoc">Phú Quốc</option>
-                        <option value="con-dao">Côn Đảo</option>
-                        <option value="cu-lao-cham">Cù Lao Chàm</option>
-                    </select>
-                    <p><label for="guests">Số người</label></p>
-                    <input type="number" id="guests" min="1" placeholder="Bạn đi bao nhiêu người">
-                    <p><label for="departure-date">Ngày đi</label></p>
-                    <input type="date" id="departure-date">
-                    <p><label for="return-date">Ngày về</label></p>
-                    <input type="date" id="return-date">
-                    <button type="submit">Tìm kiếm </button>
-                </form>
-            </div>
+            <video src="video/LẶNG NGHE SÓNG HÁT THẤY LÒNG BÌNH YÊN (4).mp4" autoplay muted loop></video>
         </div>
     </header>
 
@@ -174,17 +150,7 @@
 </section>
 <div class="loi-chuc">Chúc quý khách có những chuyến khám phá biển đảo Việt Nam thật vui vẻ và đáng nhớ!</div>
 
-    <script>
-        function toggleMenu() {
-            const menu = document.querySelector(".menu");
-            menu.classList.toggle("show");
-        }
-       document.getElementById("search-form").addEventListener("submit", function(e) {
-            e.preventDefault();
-        const keyword = document.getElementById("search-input").value;
-            alert("Từ khóa bạn tìm là: " + keyword);
-        });
-    </script>
+    <script src="tong.js"></script>
 
 </body>
 </html>
