@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+}
+.container1 {
+    position: relative;
+}
+
+.navbar {
+    background-color: #007bff;
+    padding: 10px 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 15%
+}
+
+.menu {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #007bff;
+}
+
+.menu li a {
+    display: block;
+    color: white;
+    padding: 12px 15px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.menu li a:hover {
+    background-color: #0056b3;
+}
+
+.menu.show {
+    display: block;
+}
+
+.menu-icon {
+    font-size: 28px;
+    cursor: pointer;
+    color: white;
+}
+body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f0f8ff;
+      color: #333;
+    }
+    .header {
+      background: url('https://static.vinwonders.com/2022/04/dao-gan-phu-quoc-thumb.jpg') center/cover no-repeat;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+    }
+    .header h1 {
+      font-size: 3em;
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 0.5em 1em;
+      border-radius: 10px;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 2em auto;
+      padding: 0 1em;
+    }
+    .container h1 {
+        text-align: start;
+        font-size: 35px;
+        color: #1e90ff;
+        font-style: italic;
+        font-weight: bolder;
+    }
+    .destination {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      margin-bottom: 3em;
+    }
+    .destination img.main-img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+    .content {
+      padding: 1.5em;
+    }
+    .content h2 {
+      margin-top: 0;
+      color: #1e90ff;
+    }
+    .section-title {
+      color: #1e90ff;
+      margin-top: 2em;
+      margin-bottom: 1em;
+    }
+    .activities {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5em;
+    }
+    .activity {
+      background: #f9f9f9;
+      border-radius: 10px;
+      padding: 1em;
+      flex: 1 1 280px;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .activity:hover {
+      transform: translateY(-5px);
+    }
+    .activity img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .activity h3 {
+      color: #1e90ff;
+      margin: 0.8em 0 0.5em;
+    }
+    .cta {
+      text-align: center;
+      margin: 3em 0;
+    }
+    .cta a {
+      background: #1e90ff;
+      color: white;
+      padding: 0.8em 1.5em;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .cta a:hover {
+      background: #0a75d7;
+    }
+    @media (max-width: 768px) {
+      .activities {
+        flex-direction: column;
+        .header h1{
+        font-size: 40px;
+        text-align: center;
+        }
+      }
+    }

@@ -1,0 +1,377 @@
+
+.container1 {
+    position: relative;
+}
+
+.navbar {
+    background-color: #007bff;
+    padding: 10px 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 15%
+}
+
+.menu {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #007bff;
+}
+
+.menu li a {
+    display: block;
+    color: white;
+    padding: 12px 15px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.menu li a:hover {
+    background-color: #0056b3;
+}
+
+.menu.show {
+    display: block;
+}
+
+.menu-icon {
+    font-size: 28px;
+    cursor: pointer;
+    color: white;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Phông chữ hiện đại, dễ đọc */
+    line-height: 1.7;
+    margin: 0;
+    background-color: #f8f9fa; /* Màu nền trang nhạt */
+    color: #343a40; /* Màu chữ chính đậm vừa */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 30px auto; /* Khoảng cách trên dưới lớn hơn */
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05); /* Đổ bóng tinh tế hơn */
+    border-radius: 12px; /* Góc bo tròn mềm mại hơn */
+}
+
+/* Typography */
+h1 {
+    color: #007bff; /* Màu tiêu đề nổi bật */
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700; /* Chữ đậm hơn cho tiêu đề */
+    font-size: 2.5rem;
+    border-bottom: 3px solid #007bff;
+    padding-bottom: 0.75rem;
+    text-align: left; /* Căn trái tiêu đề chính */
+}
+
+h2 {
+    color: #007bff; /* Màu tiêu đề nổi bật */
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700; /* Chữ đậm hơn cho tiêu đề */
+    font-size: 2rem;
+    border-bottom: 2px solid #dee2e6; /* Đường kẻ nhạt hơn */
+    padding-bottom: 0.5rem;
+}
+
+h3 {
+    color: #28a745; /* Màu tiêu đề phụ tươi sáng */
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+p {
+    margin-bottom: 1.2rem;
+    color: #495057; /* Màu chữ phụ */
+    font-size: 1rem;
+}
+
+strong {
+    font-weight: bolder;
+    color: #212529; /* Màu chữ đậm hơn */
+}
+
+/* Video Section */
+.history-section .video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* Tỷ lệ 16:9 */
+    overflow: hidden;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.05);
+}
+
+.history-section .video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Image Styles */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.05);
+}
+
+/* Vision Section */
+.vision-section {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.vision-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Chia thành hai cột bằng nhau */
+    gap: 30px; /* Khoảng cách giữa hai cột */
+    align-items: center; /* Căn giữa các phần tử theo chiều dọc */
+}
+
+.vision-text h3 {
+    margin-top: 0; /* Loại bỏ margin top cho tiêu đề phụ */
+}
+
+.vision-text ul {
+    padding-left: 20px;
+    list-style-type: disc; /* Kiểu dấu đầu dòng */
+}
+
+.vision-image {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
+}
+
+.vision-image img {
+width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Timeline */
+.timeline {
+    list-style: none;
+    padding-left: 0;
+    position: relative;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 20px;
+    width: 3px;
+    background-color: #007bff;
+    border-radius: 3px;
+}
+
+.timeline li {
+    margin-bottom: 25px;
+    padding-left: 50px;
+    position: relative;
+}
+
+.timeline li::before {
+    content: '';
+    position: absolute;
+    left: 10px;
+    top: 5px;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border: 3px solid #007bff;
+    border-radius: 50%;
+    z-index: 1;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+/* Core Values Section */
+.core-values-section {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.core-values-section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-style: oblique; /* Thêm kiểu chữ nghiêng */
+    font-size: 2.2rem; /* Điều chỉnh kích thước font */
+    font-weight: bold; /* Chữ đậm */
+    color: #63c3ec; /* Màu sắc nổi bật */
+}
+
+.core-values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Tạo lưới responsive */
+    gap: 25px; /* Khoảng cách giữa các item */
+}
+
+.core-values-grid .item {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+.core-values-grid .item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.core-values-grid .item img {
+    width: 60%;
+    max-height: 150px;
+    object-fit: cover;
+    margin-bottom: 1.2rem;
+    border-radius: 8px;
+}
+
+.core-values-grid .item h3 {
+    margin-top: 0;
+    color: #007bff;
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+}
+
+.core-values-grid .item p {
+    font-size: 1rem;
+    color: #495057;
+    margin-bottom: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        margin: 15px;
+        padding: 20px;
+        border-radius: 8px;
+    }
+
+    h1 {
+        font-size: 2rem;
+        margin-top: 1.5rem;
+        margin-bottom: 1rem;
+        padding-bottom: 0.5rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+        margin-top: 1.2rem;
+        margin-bottom: 0.8rem;
+        padding-bottom: 0.4rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+        margin-top: 1rem;
+        margin-bottom: 0.6rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+    }
+
+    .timeline::before {
+        left: 15px;
+    }
+
+    .timeline li {
+        padding-left: 40px;
+        margin-bottom: 20px;
+    }
+
+    .timeline li::before {
+        left: 5px;
+        width: 15px;
+        height: 15px;
+    }
+
+    .vision-content {
+        grid-template-columns: 1fr;
+    }
+
+    .vision-image {
+        margin-top: 20px;
+    }
+
+    .core-values-section h2 {
+        font-size: 2rem;
+    }
+
+    .core-values-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 15px;
+    }
+
+    .core-values-grid .item {
+        padding: 15px;
+    }
+
+    .core-values-grid .item img {
+        max-height: 100px;
+        margin-bottom: 0.8rem;
+    }
+
+    .core-values-grid .item h3 {
+        font-size: 1.1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .core-values-grid .item p {
+        font-size: 0.85rem;
+    }
+}
+/* Back to Home Button */
+.back-to-home {
+    text-align: center; /* Căn giữa nút */
+    margin-top: 30px; /* Tạo khoảng cách phía trên nút */
+    margin-bottom: 30px; /* Tạo khoảng cách phía dưới nút */
+}
+
+.back-to-home a {
+    background-color: #007bff; /* Màu nền của nút */
+    color: #fff; /* Màu chữ của nút */
+    border: none; /* Loại bỏ viền mặc định */
+    padding: 10px 20px; /* Khoảng cách bên trong nút */
+    font-size: 1rem; /* Kích thước chữ */
+    border-radius: 5px; /* Góc bo tròn */
+    cursor: pointer; /* Hiển thị con trỏ chuột khi di chuột qua */
+    transition: background-color 0.3s ease; /* Hiệu ứng chuyển màu khi hover */
+}
+
+.back-to-home button:hover {
+    background-color: #0056b3; /* Màu nền đậm hơn khi hover */
+}

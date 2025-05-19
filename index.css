@@ -1,0 +1,598 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lobster&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --primary-color: #007bff; 
+    --secondary-color: #6c757d;
+    --light-color: #f8f9fa; 
+    --text-color: #343a40; 
+    --accent-color: #28a745; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.container1{
+    position: relative;
+}
+body {
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--light-color);
+}
+.navbar {
+    background-color:#007bff;
+    padding: 1px 5px;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo img {
+    width: 15%;
+    
+}
+
+.menu {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: var(--primary-color);
+    width: 100%;
+    text-align: center;
+}
+
+.menu li a {
+    display: block;
+    color: var(--light-color);
+    padding: 12px 15px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.menu li a:hover {
+    background-color: darken(var(--primary-color), 10%);
+}
+
+.menu.show {
+    display: block;
+}
+
+.menu-icon {
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.video-container {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+}
+
+.video-container video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.header-content {
+    position: absolute;
+    top: 0%;
+    left:0%;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); /* Nền đen mờ cho nội dung */
+    color: var(--light-color);
+    padding: 60px;
+    border-radius: 10px;
+    text-align: center;
+    width: 600px;
+}
+
+.header-content h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 3em;
+    margin-bottom: 5px;
+    color: var(--accent-color);
+}
+
+.header-content p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.booking-form {
+    background-color: var(--light-color);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+.booking-form h1 {
+    color: var(--primary-color);
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.booking-form p {
+    color: var(--secondary-color);
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.booking-form select ,
+.booking-form input[type="number"],
+.booking-form input[type="date"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    outline: none;
+}
+
+.booking-form button[type="submit"] {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.booking-form button[type="submit"]:hover {
+    background-color:  darken(var(--primary-color), 10%);
+}
+
+/*------------Nice place------------*/
+.nice-place {
+    padding: 100px 0;
+}
+
+.nice-place-content-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.container {
+    max-width: 1024px;
+    margin: auto;
+}
+
+.btn {
+    height: 30px;
+    width: 100px;
+    background-color: var(--primary-color);
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+}
+
+.btn:hover {
+    background-color: tomato;
+}
+
+.h1-style {
+    text-align: center;
+    margin-bottom: 50px;
+    color: var(--primary-color);
+    position: relative;
+}
+
+.h1-style::before {
+    position: absolute;
+    content: "";
+    height: 5px;
+    width: 150px;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.h1-style::after {
+    position: absolute;
+    content: "\2665";
+    font-size: 18px;
+    color: red;
+    background-color: #f8f9fa;
+    bottom: -18px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/*-------------nice place----------*/
+/* Tổng thể của phần nice-place */
+.nice-place {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+}
+
+/* Định dạng container */
+.container {
+    max-width: 1024px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/* Tiêu đề chính */
+.h1-style {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--primary-color);
+    position: relative;
+}
+
+.h1-style::before {
+    position: absolute;
+    content: "";
+    height: 4px;
+    width: 120px;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.h1-style::after {
+    position: absolute;
+    content: "\2665";
+    font-size: 16px;
+    color: red;
+    background-color: transparent;
+    bottom: -18px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Cấu trúc bố cục hiển thị danh sách địa điểm */
+.nice-place-content-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Định dạng từng mục địa điểm */
+.nice-place-item {
+    width: calc(33.333% - 15px);
+    height: 380px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.nice-place-item:hover {
+    transform: scale(1.05);
+}
+
+/* Hình ảnh địa điểm */
+.nice-place-img img {
+    width: 100%;
+    height: 370px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Hiển thị nội dung khi hover */
+.nice-place-text {
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    bottom: 0;
+    padding: 15px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    color: #fff;
+    transform: translateY(100%);
+    transition: transform 0.5s ease;
+}
+
+.nice-place-item:hover .nice-place-text {
+    transform: translateY(0);
+}
+
+/* Tiêu đề địa điểm */
+.nice-place-text h2 {
+    font-size: 22px;
+    color: var(--primary-color);
+}
+
+/* Icon sao */
+.nice-place-text i {
+    color: gold;
+}
+
+/* Văn bản mô tả */
+.nice-place-text p {
+    font-size: 14px;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+/* Nút khám phá */
+.btn {
+    display: block;
+    margin: 30px auto;
+    height: 40px;
+    width: 160px;
+    background-color: var(--primary-color);
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: tomato;
+}
+/*----------About----------*/
+.about {
+    padding: 100px 0;
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+}
+
+.about-content-left {
+    flex: 1;
+}
+
+.about-content-left img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-content-right {
+    flex: 1;
+    padding-left: 30px;
+}
+
+.about-content-right h2 {
+    font-weight: bold;
+    color: var(--primary-color);
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.about-content-right p {
+    font-size: 1.1em;
+    margin: 25px 0;
+    line-height: 1.8;
+    color: var(--dark-color);
+}
+
+.btn {
+    text-align: center;
+    height: 40px;
+    width: 160px;
+    background-color: var(--primary-color);
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: tomato;
+}
+
+
+/*--------------review-----------*/
+.review {
+    padding: 80px 0;
+}
+
+.review-content-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.review-item {
+    width: 30%;
+    padding: 20px;
+    border-radius: 10px;
+    background: #f8f9fa;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    position: relative;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.review-item:hover {
+    transform: scale(1.05);
+}
+
+.review-icon img {
+    width: 40px;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.review-item-text {
+    font-size: 16px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #ddd;
+    font-style: italic;
+}
+
+.review-item-text span {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.review-item-img-row img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.review-item-img-text h2 {
+    font-size: 16px;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.review-item-img-text p {
+    font-size: 14px;
+    color: #333;
+}
+
+.loi-chuc {
+  font-family: 'Merriweather', serif;
+  font-style: italic;
+  color: #2e8b57; /* Màu xanh biển đậm */
+  background-color: #e0ffff; /* Màu xanh lơ nhạt */
+  padding: 15px 20px;
+  border-left: 5px solid #4682b4; /* Đường viền trái màu xanh thép */
+  border-radius: 0 10px 10px 0;
+  box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.15);
+}
+/* Mobile: width < 576px */
+/* Mobile: width < 576px */
+@media (max-width: 575.98px) {
+  .header-content {
+    width: 90%;
+    padding: 20px;
+    left: 50%;
+    top: 10%;
+    transform: translateX(-50%);
+  }
+
+  .header-content h1 {
+    font-size: 2em;
+  }
+
+  .booking-form {
+    padding: 20px;
+  }
+
+  .search-form {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .search-form input[type="text"] {
+    width: 100%;
+  }
+
+  .menu {
+    font-size: 16px;
+  }
+
+  .nice-place-content-row,
+  .review-content-row,
+  .about-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .nice-place-item,
+  .review-item {
+    width: 100%;
+  }
+
+  .about-content-left img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Tablet: width ≥ 576px and < 992px */
+@media (min-width: 576px) and (max-width: 991.98px) {
+  .header-content {
+    width: 80%;
+    left: 50%;
+    top: 10%;
+    transform: translateX(-50%);
+  }
+
+  .search-form input[type="text"] {
+    width: 250px;
+  }
+
+  .nice-place-content-row,
+  .review-content-row,
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .nice-place-item,
+  .review-item {
+    width: 90%;
+  }
+
+  .about-content-left img {
+    width: 100%;
+  }
+}
+
+/* Desktop: width ≥ 992px */
+@media (min-width: 992px) {
+  .nice-place-content-row,
+  .review-content-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .nice-place-item,
+  .review-item {
+    flex: 1;
+  }
+
+  .about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .about-content-left,
+  .about-content-right {
+    flex: 1;
+  }
+}
